@@ -1,0 +1,11 @@
+<!--suite name="Suite" parallel="classes" data-provider-thread-count="5"-->
+<suite name="Suite" >
+    <test name="Test">
+        <classes>
+            <class name="runner.Runner"></class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="retryFailScenario.AnnotationTransformer"/>
+    </listeners>
+</suite>
